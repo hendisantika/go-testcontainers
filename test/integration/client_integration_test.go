@@ -3,10 +3,11 @@ package integration_test
 import (
 	"context"
 	"fmt"
+	"github.com/go-sql-driver/mysql"
+	. "github.com/onsi/gomega"
+	"github.com/testcontainers/testcontainers-go"
+	db_client "go-testcontainers/internal/db-client"
 	"testing"
-
-	db_client "github.com/sigrdrifa/go-testcontainers/internal/db-client"
-	"github.com/testcontainers/testcontainers-go/modules/mysql"
 )
 
 func TestClient(t *testing.T) {
